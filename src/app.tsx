@@ -4,6 +4,10 @@ import { decrement, increment } from '../redux/tempSlice';
 
 import styles from './app.module.scss';
 
+export const testFunc = (a: number, b: number) => {
+  return a + b;
+}
+
 function App() {
   const dispatch = useAppDispatch();
   const val: number = useAppSelector((state) => state.example.value);
